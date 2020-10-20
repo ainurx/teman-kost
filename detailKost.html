@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <!-- CSS & JS for maps -->
+  <link rel="stylesheet" href="./leaflet/leaflet.css" type="text/css">
+  <script src="./leaflet/leaflet.js"></script>
+  <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-tk-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <a href="./detailKamar.html">
+          <img class="img-kamar-kost" src="./img/1200px-Bsodwindows10.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <a href="./detailKamar.html">
+          <img class="img-kamar-kost kamar-full" src="./img/1200px-Bsodwindows10.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <h2>Teman kost</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A officiis 
+                  voluptatibus assumenda modi recusandae commodi voluptatum ducimus, quia 
+                  minima, rerum necessitatibus corporis veritatis, non sunt laborum expedita 
+                  explicabo inventore quas?</p>
+              </div>
+              <div class="col-md-6">
+                <span class="badge badge-danger float-right">Putri</span>
+              </div>
+            </div>
+            <hr/>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div id="maps-kost"></div>
+                </div>
+                <div class="col-md-8 side-border">
+                  <h2>Fasilitas kost</h2>
+                  <div class="facil-wrapper">
+                    <div class="row">
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/wifi-signal.png" alt="wifi"/>
+                        <p>Wi-Fi</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/atm.png" alt="ATM"/>
+                        <p>ATM</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/air-conditioner.png" alt="AC"/>
+                        <p>AC</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/campus.png" alt="Kampus"/>
+                        <p>Kampus</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/mall.png" alt="mall"/>
+                        <p>Mall</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/market.png" alt="Pasar"/>
+                        <p>Pasar</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/parking-sign.png" alt="parkir"/>
+                        <p>Parkir</p>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img class="img-fasilitas" src="./img/icon/work-table.png" alt="Ruang kerja"/>
+                        <p>Ruang kerja</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr/>
+            <div class="container text-center">
+              <img class="img-kost-profider rounded-circle" src="./img/user.png" alt="">
+              <h1>Ibu kost</h1>
+              <p>Aktif Booking Langsung sejak: 29 Oktober 2019</p>
+              <p>Peluang booking disetujui: 61%</p>
+              <p>Jl. Macanda</p>
+            </div>
+            <hr/>
+            <h5>Review</h5>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <p>Kebersihan</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p>Keamanan</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p>Kenyamanan</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p>Fasilitas kamar</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p>Fasilitas bersama</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p>Harga</p>
+                <div class="d-flex mx-auto justify-content-center">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                  <img class="icon-review" src="./img/icon/like-2.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-md-12 mt-3">
+                <div class="d-flex">
+                  <img class="img-user-review rounded-circle" src="./img/user.png" alt="user">
+                  <div class="d-block">
+                    <h6>User <span>| Mahasiswa</span></h6>
+                    <p class="text-secondary">15 Oktober 2020</p>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptas a quos ad alias. Facere voluptatibus sed tempore laborum praesentium architecto quidem officiis doloremque voluptate, cumque ullam ipsum sapiente reprehenderit?</p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>LOGO</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet rem fugiat consequuntur omnis exercitationem, eos commodi veniam quam earum eum suscipit, sit nostrum, in quia facilis. Quo temporibus rerum earum.</p>
+        </div>
+        <div class="col-md-8">
+          <h2 class="text-white">Hubungi kami</h2>
+          <div class="d-flex">
+            <a href="#">
+              <img class="contact-icon" src="./img/icon/whatsapp.png"/>
+            </a>
+            <a href="#">
+              <img class="contact-icon" src="./img/icon/facebook-app-logo.png"/>
+            </a>
+            <a href="#">
+              <img class="contact-icon" src="./img/icon/instagram.png"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center">
+      &#169;Teman Kost
+    </p>
+  </footer>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+
+  <script>
+    var mymap = L.map('maps-kost').setView([-5.209038, 119.487330], 13);
+    var marker = L.marker([-5.209038, 119.487330]).addTo(mymap);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWludXJyIiwiYSI6ImNqbTM2bXNsZDFpaXczdnBhaXNuazk5NmgifQ.8gVKy0ASujHRypz03IgNVg', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoiYWludXJyIiwiYSI6ImNqbTM2bXNsZDFpaXczdnBhaXNuazk5NmgifQ.8gVKy0ASujHRypz03IgNVg'
+  }).addTo(mymap);
+  </script>
+
+</body>
+</html>

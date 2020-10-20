@@ -1,0 +1,186 @@
+body{
+  background-color: #FCF6F6;
+}
+
+section{
+  margin-bottom: 32px;
+}
+
+.primary-color{
+  color: #01ABAB;
+}
+
+.bg-tk-primary{
+  background-color: #01ABAB;
+}
+
+.img-bg{
+  width: 100%;
+}
+
+.text-second{
+  color: #9F9D9D;
+}
+
+.text-gimmick{
+  width: 68px;
+  border: 2px solid #01ABAB;
+}
+
+.img-user-card{
+  width: 32px;
+}
+
+footer{
+  margin-top: 32px;
+  padding: 10px;
+  background-color: #01ABAB;
+}
+
+footer > p{
+  color: white;
+}
+
+.side-border{
+  border-left: 1px solid #9F9D9D;
+}
+
+.card-kost{
+  color: black;
+}
+
+.card-kost:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.card-body{
+  padding-bottom: 0px;
+}
+
+/* INDEX */
+.jumbotron h1{
+  margin-top: 100px;
+}
+
+.img-index-bg{
+  background-image: url('../img/background.jpg');
+  background-color: #FCF6F6;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 80vh;
+}
+
+.carousel-promo{
+  margin-top: -200px;
+  margin-bottom: 32px;
+  width: 50%;
+}
+
+.carousel-item{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.carousel-item > img{
+  border-radius: 10px;
+}
+
+.card-testimoni{
+  padding: 12px;
+  width: 300px;
+  border-radius: 10px 10px 10px 0px;
+  background-color: white;
+}
+
+.card-testimoni > hr{
+  width: 32px;
+  border: 1px solid #01ABAB;
+}
+
+.img-testimoni-client{
+  border-radius: 10px;
+  width: 52px;
+}
+
+.contact-icon{
+  width: 32px;
+  margin: 24px;
+}
+
+/* DETAIL KOST PAGE*/
+.img-kamar-kost{
+  width: 100%;
+}
+
+.facil-wrapper{
+  padding: 24px;
+}
+
+.img-size{
+  width: 100px;
+}
+
+.kamar-full{
+  background-color: black;
+  opacity: 0.6;
+}
+
+#maps-kost{
+  width: 100%;
+  height: 300px;
+}
+
+.img-fasilitas{
+  width: 32px;
+}
+
+.img-kost-profider{
+  width: 72px;
+}
+
+.btn-kost{
+  width: 47.8%;
+}
+
+.icon-review{
+  width: 24px;
+  margin: 8px 8px 18px 8px;
+}
+
+.img-user-review{
+  width: 67px;
+}
+
+/* DETAIL KAMAR PAGE */
+.img-detail-kost{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-list-kost{
+  margin-top: 12px;
+  width: 100px;
+  border-radius: 2.5px;
+}
+
+.col-right-position{
+  float: right;
+}
+
+.card-tanggal-masuk{
+  padding-bottom: 12px;
+}
+
+/* CHECKOUT */
+.card-checkout{
+  margin-top: 100px;
+  padding-bottom: 18px;
+}
+
+.btn-checkout{
+  width: 100%;
+  margin-top: 36px;
+}
+
