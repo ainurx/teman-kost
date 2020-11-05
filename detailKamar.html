@@ -37,9 +37,10 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-body">
-            <img class="img-detail-kost" src="./img/1200px-Bsodwindows10.png" alt="kost"/>
+            <img id="imgMain" class="img-detail-kost" src="./img/1200px-Bsodwindows10.png" alt="kost"/>
             <div>
-              <img class="img-list-kost" src="./img/1200px-Bsodwindows10.png" alt="kost"/>
+              <img id="img1" class="img-list-kost" src="./img/1200px-Bsodwindows10.png" alt="kost"/>
+              <img id="img2" class="img-list-kost" src="./img/Anime-Wallpaper-Desktop-Background-29.jpg" alt="kost"/>
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
@@ -133,5 +134,17 @@
   <script src="./js/jquery.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script>
+    const imgMain = document.querySelector('#imgMain')
+    const img1 = document.querySelector('#img1')
+    const img2 = document.querySelector('#img2')
+
+    img1.addEventListener("mouseover", function(){
+      imgMain.src = img1.src
+    })
+    img2.addEventListener("mouseover", function(){
+      imgMain.src = img2.src
+    })
+  </script>
 </body>
 </html>

@@ -39,6 +39,10 @@ section{
   width: 32px;
 }
 
+.kost-page{
+  margin-top: 68px;
+}
+
 footer{
   margin-top: 32px;
   padding: 10px;
@@ -114,6 +118,7 @@ footer > p{
 /* DETAIL KOST PAGE*/
 .img-kamar-kost{
   width: 100%;
+
 }
 
 .facil-wrapper{
@@ -124,9 +129,33 @@ footer > p{
   width: 100px;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 100%;
+  width: 100%;
+
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #01ABAB;
+}
+
+.wrap-kost:hover .overlay{
+  width: 91%;
+  opacity: 1;
+}
+
+.wrap-kost-full{
+  background-color: rgb(155, 155, 155);
+  width: 91%;
+}
+
 .kamar-full{
-  background-color: black;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 #maps-kost{
