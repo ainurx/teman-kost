@@ -10,12 +10,20 @@ section{
   color: #01ABAB;
 }
 
+.text-teman-kost{
+  color: #01ABAB;
+}
+
 .bg-tk-primary{
   background-color: #01ABAB;
 }
 
 .img-bg{
   width: 100%;
+}
+
+.icon-layanan{
+  width: 48px;
 }
 
 .text-second{
@@ -63,24 +71,18 @@ footer > p{
   margin-top: 100px;
 }
 
+.search-kost{
+  width: 400px;
+}
+
 .img-index-bg{
-  background-image: url('../img/background.jpg');
-  background-color: #FCF6F6;
-  opacity: 0.8;
-  background-repeat: no-repeat;
+  background-color: white;
   background-size: 100%;
   height: 80vh;
 }
 
 .carousel-promo{
-  margin-top: -200px;
-  margin-bottom: 32px;
-  width: 50%;
-}
-
-.carousel-item{
-  padding-left: 24px;
-  padding-right: 24px;
+  width: 60%;
 }
 
 .carousel-item > img{
@@ -151,6 +153,10 @@ footer > p{
 
 .img-user-review{
   width: 67px;
+}
+
+.form-review{
+  margin-bottom: 64px;
 }
 
 /* DETAIL KAMAR PAGE */
