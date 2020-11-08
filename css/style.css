@@ -75,6 +75,17 @@ footer > p{
   margin-top: 100px;
 }
 
+@media (max-width: 576px){
+  .search-kost{
+    width: 300px !important;
+  }
+
+  .swiper-container{
+    margin-top: -80px !important;
+    height: 200px !important;
+  }
+}
+
 .search-kost{
   width: 400px;
 }
